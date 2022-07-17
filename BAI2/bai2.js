@@ -1,5 +1,15 @@
 
 
+function anHien() {
+    var loaiKhachHang = document.getElementById("khachHang").value;
+    var soKN =document.getElementById("soKN");
+
+    if (loaiKhachHang == "DNnghiep") {
+      soKN.style.display = "block";
+    } else {
+        soKN.style.display = "none";
+    }
+}
 
 function tinhTien() {
     var loaiKhachHang = document.getElementById("khachHang").value;
@@ -24,7 +34,7 @@ function tinhTien() {
             
 
             tiencap = 4.5 + 20.5 + (7.5 * soKenh);
-            document.getElementById("anHien").style.display = "none"
+            
             
          
             break;
@@ -32,22 +42,14 @@ function tinhTien() {
         default:
             alert("hãy chọn loại khách hàng");
             break;
+
             
     }
+    
     
     document.getElementById("txtResult").innerHTML ="Mã khách hàng:" + maKH +"; Tiền cáp: "+" $" + tiencap.toLocaleString();
 
 }
-function anHien(){
-    var anhien = document.getElementById("khachHang").value;
-    document.getElementById("anHien").style.display = ""
-    if(anhien == "NDan"){
-         "none"
 
-    }else{
-         "block"
-    }
-    
-}
 
 document.getElementById("btnT").onclick = tinhTien;

@@ -18,8 +18,8 @@
     <div class="w-50 py-5">
         <form>
             <div class="col-12 col-lg-4">
-                <select class="form-control" name="" id="khachHang">
-                    <option selected disabled value="">Chọn loại khách hàng</option>
+                <select class="form-control"  id="khachHang"  onchange="anHien()">
+                    <option  value="">Chọn loại khách hàng</option>
                     <option value="NDan">Nhà Dân</option>
                     <option value="DNnghiep">Doanh Nghiệp</option>
                     
@@ -33,7 +33,7 @@
                 <label for="soKenh">số kênh cao cấp</label>
                 <input type="number" class="form-control" id="soKenh">
             </div>
-            <div class="form-group gy-3 px-2 mt-5 text-success" id="anHien" style="display:block;">
+            <div class="form-group gy-3 px-2 mt-5 text-success" >
                 <label for="soKN" >số kết nối</label>
                 <input type="number" class="form-control" id="soKN">
             </div>
